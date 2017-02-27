@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": "",
-"sources": [],
+"mappings": "AAAA,OAAQ;EACP,OAAO,EAAE,IAAI;;AAGd,gBAAiB;EAChB,cAAc,EAAE,MAAM",
+"sources": ["../scss/portrait.scss"],
 "names": [],
 "file": "portrait.css"
 }

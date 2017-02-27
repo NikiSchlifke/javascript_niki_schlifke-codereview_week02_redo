@@ -1,3 +1,7 @@
+.avatar {
+  display: none; }
 
+aside .playfield {
+  flex-direction: column; }
 
 /*# sourceMappingURL=portrait.css.map */

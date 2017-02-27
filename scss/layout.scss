@@ -1,5 +1,5 @@
-$desktop-portrait-width: 1280px;
-$desktop-portrait-height: 800px;
+$desktop-portrait-width: 1600px;
+$desktop-portrait-height: 900px;
 
 @media (min-width: $desktop-portrait-width) and (min-height: $desktop-portrait-height) {
 	@import "desktop";
@@ -13,9 +13,51 @@ $desktop-portrait-height: 800px;
 	@import "portrait";
 }
 
+html, body
+{
+    width: 100%;
+    height: 100%;
+    
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+html {
+	justify-content: space-between;
+}
 
-aside,
-aside section {
+body {
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+
+main {
+	display: flex;
+	justify-content: space-between;
+	align-items: stretch;
+}
+
+
+
+aside .playfield {
 	display: flex;
 	justify-content: space-around;
 }
+
+aside {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+
+}
+
+
+#menu {
+	display:flex;
+	justify-content: space-around;
+	flex-direction: column;
+}
+
+
+

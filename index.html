@@ -1,38 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="utf-8">
-	<title>Dice Game</title>
-	<link rel="stylesheet" type="text/css" href="style/main.css">
-</head>
-<body>
-<main>
-	<div id="menu">
-		<div class="maindeco"></div>
-		<button onclick="newGame()">New Game</button>
-		<div class="maindeco"></div>
-	</div>
 
-<aside id="player1">
-	<h3 id="player1--name">Player1</h3>
-	<section id="player1--dices">
-		<div class="dice"></div>
-		<div class="dice"></div>
-		<div class="dice"></div>
-	</section>
-	<div class="dicedeco"></div>
-	<button class="rollbutton" id="player1--rollbutton">Roll</button>
-</aside>
-<aside id="player2">
-	<h3 id="player2--name">Player2</h3>
-	<section id="player2--dices">
-		<div class="dice"></div>
-		<div class="dice"></div>
-		<div class="dice"></div>
-	</section>
-	<div class="dicedeco"></div>
-	<button class="rollbutton" id="player2--rollbutton">Roll</button>
-</aside>
-</main>
+<head>
+    <meta charset="utf-8">
+    <title>Dice Game</title>
+    <link rel="stylesheet" type="text/css" href="style/main.css">
+</head>
+
+<body>
+    <main>
+        <aside id="player1">
+            <h3 class="name" id="player1--name">Player1</h3>
+            <div class="avatar"></div>
+            <div class="play">
+                <section class="playfield" id="player1--dices">
+                    <div class="playfield--dice"></div>
+                    <div class="playfield--dice"></div>
+                    <div class="playfield--dice"></div>
+                </section>
+                <div class="result">
+                    <h1 id="player1--result"></h1>
+                </div>
+            </div>
+            <div class="dicedeco"></div>
+            <button class="rollbutton" id="player1--rollbutton">Roll</button>
+        </aside>
+        <div id="menu">
+            <div class="maindeco"></div>
+            <button onclick="newGame()">New Game</button>
+            <div class="maindeco"></div>
+        </div>
+        <aside id="player2">
+            <h3 class="name" id="player2--name">Player2</h3>
+            <div class="avatar"></div>
+            <div class="play">
+                <section class="playfield" id="player2--dices">
+                    <div class="playfield--dice"></div>
+                    <div class="playfield--dice"></div>
+                    <div class="playfield--dice"></div>
+                </section>
+                <div class="result">
+                    <h1 id="player2--result"></h1>
+                </div>
+            </div>
+            <div class="dicedeco"></div>
+            <button class="rollbutton" id="player2--rollbutton">Roll</button>
+        </aside>
+    </main>
 </body>
+
 </html>

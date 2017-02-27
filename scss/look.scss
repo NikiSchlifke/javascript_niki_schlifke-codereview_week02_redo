@@ -1,9 +1,106 @@
+$dice-width: 8em;
+$dice-radius: $dice-width / 4;
+$dice-shadow-inset: $dice-width / 8;
+$dice-shadow-inset-blur: $dice-width / 4;
+$play-grow: 20;
+$avatar-grow: 70;
+$rollbutton-grow: 5;
+$name-grow: 5;
 
-.dice {
-    width: 8em;
-    height: 8em;
+
+html,
+button {
+    font-family: Garamond, Baskerville, 'Baskerville Old Face', 'Hoefler Text', 'Times New Roman', serif;
+}
+
+body {
+    background-color: black;
+}
+
+.playfield--dice {
+    background-color: white;
+    width: $dice-width;
+    height: $dice-width;
     // border-style: solid;
-    border-radius: 2em;
-    box-shadow: inset 1em 1em 2em #AAAAAA, inset -1em -1em 2em #222222, 1em 2em 5em #555555;
-	margin: 2em;
+    border-radius: $dice-radius;
+    box-shadow: inset $dice-shadow-inset $dice-shadow-inset $dice-shadow-inset-blur #AAAAAA, inset $dice-shadow-inset*-1 $dice-shadow-inset*-1 $dice-shadow-inset-blur #222222, $dice-shadow-inset $dice-shadow-inset-blur 5*$dice-shadow-inset #555555;
+    margin: 2em;
+}
+
+.maindeco,
+.avatar,
+.play,
+aside {
+    border-style: dotted;
+    border-width: 0.5em;
+    border-radius: 1em;
+}
+
+.maindeco {
+    border-style: dotted;
+    border-width: 0.5em;
+    border-radius: 1em;
+    border-color: green;
+    background-color: darkgreen;
+    flex-grow: 6;
+    margin: 1em;
+}
+
+aside {
+    border-width: 0.5em;
+    border-radius: 1em;
+    border-color: lightgray;
+    background-color: #418A7A;
+    margin: 1em;
+    // padding: 1em;
+    text-align: center;
+}
+
+aside > * {
+	margin: 1em;
+}
+
+.play {
+    border-color: lightgray;
+    background-color: white;
+    border-radius: 4em;
+    padding: 1em;
+    flex-grow: $play-grow;
+}
+
+#menu button {
+    flex-grow: 1;
+    margin: 0.5em;
+    overflow-wrap: break-word;
+}
+
+button,
+{
+    padding: 1em;
+    background-color: #B43742;
+    margin-color: #962933;
+    border-radius: 3em;
+    outline: none;
+    font-size: 1.5em;
+    border-color: red;
+    border-width: 0.25em;
+}
+.rollbotton {
+	flex-grow: $rollbutton-grow;
+}
+.avatar {
+    background-image: url("../static/start.jpg");
+
+    background-repeat: none;
+    flex-grow: $avatar-grow;
+    border-color: #418A7A;
+    background-position: center;
+}
+
+
+.name {
+	padding: 0;
+	margin: 0;
+	font-size: 2em;
+	flex-grow: $name-grow;
 }
