@@ -1,3 +1,13 @@
+.dice {
+  width: 8em;
+  height: 8em;
+  border-radius: 2em;
+  box-shadow: inset 1em 1em 2em #AAAAAA, inset -1em -1em 2em #222222, 1em 2em 5em #555555;
+  margin: 2em; }
 
+aside,
+aside section {
+  display: flex;
+  justify-content: space-around; }
 
 /*# sourceMappingURL=main.css.map */

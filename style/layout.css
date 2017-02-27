@@ -1,3 +1,6 @@
-
+aside,
+aside section {
+  display: flex;
+  justify-content: space-around; }
 
 /*# sourceMappingURL=layout.css.map */

@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": "",
-"sources": [],
+"mappings": "AACA,KAAM;EACF,KAAK,EAAE,GAAG;EACV,MAAM,EAAE,GAAG;EAEX,aAAa,EAAE,GAAG;EAClB,UAAU,EAAE,2EAA2E;EAC1F,MAAM,EAAE,GAAG",
+"sources": ["../scss/look.scss"],
 "names": [],
 "file": "look.css"
 }

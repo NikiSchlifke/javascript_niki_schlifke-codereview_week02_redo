@@ -12,3 +12,10 @@ $desktop-portrait-height: 800px;
 @media (max-width: $desktop-portrait-height) {
 	@import "portrait";
 }
+
+
+aside,
+aside section {
+	display: flex;
+	justify-content: space-around;
+}
