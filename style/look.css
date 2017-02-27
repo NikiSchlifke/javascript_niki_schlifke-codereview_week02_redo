@@ -16,10 +16,14 @@ body {
 .maindeco,
 .avatar,
 .play,
+.dicedeco,
 aside {
   border-style: dotted;
   border-width: 0.5em;
   border-radius: 1em; }
+
+.dicedeco {
+  border-color: lightgray; }
 
 .maindeco {
   border-style: dotted;

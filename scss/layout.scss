@@ -1,11 +1,11 @@
 $desktop-portrait-width: 1600px;
-$desktop-portrait-height: 900px;
+$desktop-portrait-height: 1160px;
 
 @media (min-width: $desktop-portrait-width) and (min-height: $desktop-portrait-height) {
 	@import "desktop";
 }
 
-@media (max-width: $desktop-portrait-width) and (max-height: $desktop-portrait-height) {
+@media (max-width: $desktop-portrait-width)  {
 	@import "landscape";
 }
 
