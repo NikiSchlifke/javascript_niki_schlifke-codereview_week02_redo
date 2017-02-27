@@ -65,7 +65,8 @@ button {
   outline: none;
   font-size: 1.5em;
   border-color: red;
-  border-width: 0.25em; }
+  border-width: 0.25em;
+  box-shadow: 0em 0em 8em 2em rgba(255, 0, 0, 0.5); }
 
 .rollbotton {
   flex-grow: 5; }

@@ -79,7 +79,7 @@ aside > * {
     overflow-wrap: break-word;
 }
 
-button,
+button
 {
     padding: 1em;
     background-color: #B43742;
@@ -89,6 +89,7 @@ button,
     font-size: 1.5em;
     border-color: red;
     border-width: 0.25em;
+    box-shadow: 0em 0em 8em 2em rgba(255,0,0,0.5);;
 }
 .rollbotton {
 	flex-grow: $rollbutton-grow;
