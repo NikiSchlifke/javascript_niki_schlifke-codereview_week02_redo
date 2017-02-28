@@ -14,12 +14,18 @@
             <div class="avatar"></div>
             <div class="play">
                 <section class="playfield" id="player1--dices">
-                    <div class="playfield--dice"><p class="dice--result"></p></div>
-                    <div class="playfield--dice"><p class="dice--result"></p></div>
-                    <div class="playfield--dice"><p class="dice--result"></p></div>
+                    <div class="playfield--dice">
+                        <p class="dice--result"> </p>
+                    </div>
+                    <div class="playfield--dice">
+                        <p class="dice--result"> </p>
+                    </div>
+                    <div class="playfield--dice">
+                        <p class="dice--result"> </p>
+                    </div>
                 </section>
                 <div class="result">
-                    <h1 id="player1--result"></h1>
+                    <p id="player1--result"> </p>
                 </div>
             </div>
             <button class="rollbutton" id="player1--rollbutton">Roll</button>
@@ -34,12 +40,18 @@
             <div class="avatar"></div>
             <div class="play">
                 <section class="playfield" id="player2--dices">
-                    <div class="playfield--dice"><p class="dice--result"></p></div>
-                    <div class="playfield--dice"><p class="dice--result"></p></div>
-                    <div class="playfield--dice"><p class="dice--result"></p></div>
+                    <div class="playfield--dice">
+                        <p class="dice--result"> </p>
+                    </div>
+                    <div class="playfield--dice">
+                        <p class="dice--result"> </p>
+                    </div>
+                    <div class="playfield--dice">
+                        <p class="dice--result"> </p>
+                    </div>
                 </section>
                 <div class="result">
-                    <h1 id="player2--result"></h1>
+                    <p id="player2--result"> </p>
                 </div>
             </div>
             <button class="rollbutton" id="player2--rollbutton">Roll</button>
@@ -59,11 +71,15 @@
 
     });
     player1_rollbutton.addEventListener('click', function() {
-        playerRoll(player1_dices);
+        // global variable for score
+        player1_score = playerRoll(player1_dices);
+        fillScore(player1_score, player1_result)
 
     });
     player2_rollbutton.addEventListener('click', function() {
-        playerRoll(player2_dices);
+        // global variable for score
+        player2_score = playerRoll(player2_dices);
+        fillScore(player2_score, player2_result)
 
     });
     </script>

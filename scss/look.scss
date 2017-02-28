@@ -41,6 +41,17 @@ body {
     padding: 0;
 
 }
+.result {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.result p {
+    margin: 0;
+    padding: 0;
+    font-size: 3em;
+}
 
 .maindeco,
 .avatar,
