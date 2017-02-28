@@ -65,6 +65,15 @@ function playerRoll(dice_doms) {
 
 }
 
+
+
+function nextPlayer(button1, button2) {
+    button1.disabled = true;
+    if (hasBeenRolled) {
+        button2.disabled = false;
+    }
+}
+
 /**
  * Ask a players name and store it into the given dom object.
  * Return the players name for later use.
@@ -112,4 +121,6 @@ document.addEventListener("DOMContentLoaded", function() {
     title += promptPlayer(document.getElementById('player2--name'), 2);
     document.title = title;
     document.body.style.backgroundColor = randomColor();
+    // Global variable for rolling state.
+    hasBeenRolled = false;
 });

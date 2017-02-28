@@ -15,17 +15,17 @@
             <div class="play">
                 <section class="playfield" id="player1--dices">
                     <div class="playfield--dice">
-                        <p class="dice--result"> </p>
+                        <p class="dice--result">-</p>
                     </div>
                     <div class="playfield--dice">
-                        <p class="dice--result"> </p>
+                        <p class="dice--result">-</p>
                     </div>
                     <div class="playfield--dice">
-                        <p class="dice--result"> </p>
+                        <p class="dice--result">-</p>
                     </div>
                 </section>
                 <div class="result">
-                    <p id="player1--result"> </p>
+                    <p id="player1--result">-</p>
                 </div>
             </div>
             <button class="rollbutton" id="player1--rollbutton">Roll</button>
@@ -41,17 +41,17 @@
             <div class="play">
                 <section class="playfield" id="player2--dices">
                     <div class="playfield--dice">
-                        <p class="dice--result"> </p>
+                        <p class="dice--result">-</p>
                     </div>
                     <div class="playfield--dice">
-                        <p class="dice--result"> </p>
+                        <p class="dice--result">-</p>
                     </div>
                     <div class="playfield--dice">
-                        <p class="dice--result"> </p>
+                        <p class="dice--result">-</p>
                     </div>
                 </section>
                 <div class="result">
-                    <p id="player2--result"> </p>
+                    <p id="player2--result">-</p>
                 </div>
             </div>
             <button class="rollbutton" id="player2--rollbutton">Roll</button>
@@ -67,19 +67,30 @@
     var player1_result = document.getElementById("player1--result");
     var player2_result = document.getElementById("player2--result");
 
+
     newgamebutton.addEventListener('click', function() {
+        player1_rollbutton.disabled = false;
+        player2_rollbutton.disabled = false;
 
     });
     player1_rollbutton.addEventListener('click', function() {
         // global variable for score
         player1_score = playerRoll(player1_dices);
         fillScore(player1_score, player1_result)
+                hasbeenrolled = true;
+
+        nextPlayer(player1_rollbutton, player2_rollbutton);
+
 
     });
     player2_rollbutton.addEventListener('click', function() {
         // global variable for score
         player2_score = playerRoll(player2_dices);
         fillScore(player2_score, player2_result)
+                hasbeenrolled = true;
+
+        nextPlayer(player2_rollbutton, player1_rollbutton);
+
 
     });
     </script>
