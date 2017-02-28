@@ -14,9 +14,9 @@
             <div class="avatar"></div>
             <div class="play">
                 <section class="playfield" id="player1--dices">
-                    <div class="playfield--dice"></div>
-                    <div class="playfield--dice"></div>
-                    <div class="playfield--dice"></div>
+                    <div class="playfield--dice"><p class="dice--result"></p></div>
+                    <div class="playfield--dice"><p class="dice--result"></p></div>
+                    <div class="playfield--dice"><p class="dice--result"></p></div>
                 </section>
                 <div class="result">
                     <h1 id="player1--result"></h1>
@@ -26,7 +26,7 @@
         </aside>
         <div id="menu">
             <div class="maindeco"></div>
-            <button onclick="newGame()">New Game</button>
+            <button id="new--gamebutton">New Game</button>
             <div class="maindeco"></div>
         </div>
         <aside id="player2">
@@ -34,9 +34,9 @@
             <div class="avatar"></div>
             <div class="play">
                 <section class="playfield" id="player2--dices">
-                    <div class="playfield--dice"></div>
-                    <div class="playfield--dice"></div>
-                    <div class="playfield--dice"></div>
+                    <div class="playfield--dice"><p class="dice--result"></p></div>
+                    <div class="playfield--dice"><p class="dice--result"></p></div>
+                    <div class="playfield--dice"><p class="dice--result"></p></div>
                 </section>
                 <div class="result">
                     <h1 id="player2--result"></h1>
@@ -45,6 +45,28 @@
             <button class="rollbutton" id="player2--rollbutton">Roll</button>
         </aside>
     </main>
+    <script type="text/javascript" src="js/game.js"></script>
+    <script type="text/javascript">
+    var newgamebutton = document.getElementById("new--gamebutton");
+    var player1_rollbutton = document.getElementById("player1--rollbutton");
+    var player2_rollbutton = document.getElementById("player2--rollbutton");
+    var player1_dices = document.getElementById("player1--dices").getElementsByClassName('dice--result');
+    var player2_dices = document.getElementById("player2--dices").getElementsByClassName('dice--result');
+    var player1_result = document.getElementById("player1--result");
+    var player2_result = document.getElementById("player2--result");
+
+    newgamebutton.addEventListener('click', function() {
+
+    });
+    player1_rollbutton.addEventListener('click', function() {
+        playerRoll(player1_dices);
+
+    });
+    player2_rollbutton.addEventListener('click', function() {
+        playerRoll(player2_dices);
+
+    });
+    </script>
 </body>
 
 </html>

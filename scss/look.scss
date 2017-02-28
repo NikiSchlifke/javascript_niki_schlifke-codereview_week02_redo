@@ -17,6 +17,9 @@ body {
     background-color: black;
 }
 
+.playfield {
+}
+
 .playfield--dice {
     background-color: white;
     width: $dice-width;
@@ -25,6 +28,18 @@ body {
     border-radius: $dice-radius;
     box-shadow: inset $dice-shadow-inset $dice-shadow-inset $dice-shadow-inset-blur #AAAAAA, inset $dice-shadow-inset*-1 $dice-shadow-inset*-1 $dice-shadow-inset-blur #222222, $dice-shadow-inset $dice-shadow-inset-blur 5*$dice-shadow-inset #555555;
     margin: 2em;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+
+}
+
+.dice--result {
+    font-size: 4em;
+    margin: 0;
+    padding: 0;
+
 }
 
 .maindeco,
